@@ -49,6 +49,11 @@ h1 h3{
     padding: 2em 3em 4em 3em;
 }
 
+.link{
+    color: white;
+    text-decoration: none;
+}
+
 .container > div{
     display: flex;
     justify-content: center;
