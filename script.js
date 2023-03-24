@@ -61,7 +61,7 @@ function fetchdata(){
 
         const iconId= data.current.condition.icon.substr("//cdn.weatherapi.com/weather/64x64/".length);
 
-        icon.src= "./icons/"+iconId;
+        icon.src= "icons/"+iconId;
 
         cloud.innerHTML= data.current.cloud+"%";
         humidity.innerHTML= data.current.humidity+"%";
@@ -81,7 +81,7 @@ function fetchdata(){
 
         if(code == 1000){
 
-            app.style.backgroundImage= 'url(./images/'+timeofday+'/clear.jpg)';
+            app.style.backgroundImage= 'url(images/'+timeofday+'/clear.jpg)';
 
             button.style.background= "#e5ba92";
             if(timeofday == "night"){
@@ -102,7 +102,7 @@ function fetchdata(){
             code == 1279||
             code == 1282
         ){
-            app.style.backgroundImage= 'url(./images/'+timeofday+'/cloudy.jpg)';
+            app.style.backgroundImage= 'url(images/'+timeofday+'/cloudy.jpg)';
             button.style.background= "#fa6d1b";
             if(timeofday == "night"){
                 button.style.background= "#181e27";
@@ -128,14 +128,14 @@ function fetchdata(){
             code == 1249||
             code == 1252
         ){
-            app.style.backgroundImage= 'url(./images/'+timeofday+'/rainy.jpg)';
+            app.style.backgroundImage= 'url(images/'+timeofday+'/rainy.jpg)';
             button.style.background= "#647d75";
             if(timeofday == "night"){
                 button.style.background= "#325c80";
             }
         }
         else{
-            app.style.backgroundImage= 'url(./images/'+timeofday+'/snowy.jpg)';
+            app.style.backgroundImage= 'url(images/'+timeofday+'/snowy.jpg)';
             button.style.background= "#4d72aa";
             if(timeofday == "night"){
                 button.style.background= "#1b1b1b";
